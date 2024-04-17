@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.tolga.resimdefteri.fragment.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_discover"
+            app:destination="@id/discover" />
+        <action
+            android:id="@+id/action_homePage_to_upload"
+            app:destination="@id/upload" />
+        <action
+            android:id="@+id/action_homePage_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/discover"
+        android:name="com.tolga.resimdefteri.fragment.Discover"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discover_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_discover_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_discover_to_upload"
+            app:destination="@id/upload" />
+    </fragment>
+    <fragment
+        android:id="@+id/upload"
+        android:name="com.tolga.resimdefteri.fragment.Upload"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" >
+        <action
+            android:id="@+id/action_upload_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_upload_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_upload_to_discover"
+            app:destination="@id/discover" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.tolga.resimdefteri.fragment.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_profile_to_discover"
+            app:destination="@id/discover" />
+        <action
+            android:id="@+id/action_profile_to_upload"
+            app:destination="@id/upload" />
+    </fragment>
+</navigation>

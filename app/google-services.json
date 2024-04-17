@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "385620022578",
+    "project_id": "resimdefteri-9409e",
+    "storage_bucket": "resimdefteri-9409e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385620022578:android:a333055deff28e9388b32b",
+        "android_client_info": {
+          "package_name": "com.tolga.resimdefteri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4A8GwvL9ihy7pr7Q7uKVZk0q5thZGkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
